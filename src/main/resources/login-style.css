@@ -1,0 +1,47 @@
+
+body
+{
+    background-image: url("./loginpagebackground.jpg");
+}
+
+#header
+{
+    font-size: 40px;
+    text-decoration: underline;
+    background-color: rgb(88, 88, 87);
+    color: rgb(241, 229, 229);
+}
+#login-container
+{
+    margin: auto;
+    margin-top: 10%;
+    width: 370px;
+    height: 280px;
+    background-color: rgb(88, 88, 87);
+    border-radius: 6px;
+}
+#headerlogin
+{
+    font-size: 50px;
+    color: white;
+}
+#Loginbtn
+{
+    margin-top: 20px;
+    margin-left: 0px;
+    color:blue;
+}
+#Registerbtn
+{
+    margin-top: 20px;
+    margin-left: 100px;
+    color: gold;
+}
+#innerback
+{
+    margin-left: 12px;
+    width: 344px;
+    height: 200px;
+    background-color: gold;
+    border-radius: 6px;
+}

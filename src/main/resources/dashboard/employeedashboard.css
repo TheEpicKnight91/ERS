@@ -1,0 +1,212 @@
+body
+{
+    background-image: url("../employeedashboardbackground.webp");
+}
+#create-reim-form
+{
+    position: fixed;
+    width: 400px;
+    height: 500px;
+    top: 25%;
+    left: 40%;
+    background-color: rgb(6, 141, 165);
+}
+
+.opacity1
+{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgba(128, 128, 128, 0.267);
+}
+#create-reim-form #amount
+{
+    margin-top: 10px;
+    width: 300px;
+    color: rgb(6, 194, 62);
+    font-size: 20px;
+}
+#create-reim-form #description
+{
+    font-size: 20px;
+    width: 350px;
+    height : 300px;
+    color: rgb(6, 194, 62);
+}
+#create-reim
+{
+    background-color: rgb(0, 4, 255);
+    width: 250px;
+    height: 40px;
+    margin-right: 0px;
+}
+#cancelbtn
+{
+    margin-left: 56px;
+    margin-top: 5px;
+    margin-right: 40px;
+    background-color: rgb(0, 4, 255);
+    width: 90px;
+    height: 40px;
+}
+#cancelbtn:hover
+{
+    background-color: white;
+}
+#create-reim:hover
+{
+    background-color: white;
+}
+#create-reim-form span
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: rgb(194, 251, 6);
+}
+.opacity2
+{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgba(128, 128, 128, 0.267);
+}
+#view-reim-form
+{
+    position: fixed;
+    width: 900px;
+    height: 500px;
+    top: 25%;
+    left: 26%;
+    background-color: rgb(6, 141, 165);
+}
+#view-reim-form th
+{
+    background-color: rgb(8, 230, 0);
+    font-size: 20px;
+    color: rgb(40, 10, 209);
+}
+#view-reim-form tr
+{
+    color: rgb(7, 90, 11);
+    font-size: 25px;
+}
+#view-reim-form #descriptionelems
+{
+    margin-top: 20px;
+    color: rgb(7, 90, 11);
+    font-size: 25px;
+    margin-left: -80%;
+    margin-bottom: 10px;
+}
+#view-reim-form #reim-description
+{
+    text-align: left;
+    margin-left: 46%;
+}
+#approve-reim
+{
+    background-color: green;
+}
+#deny-btn
+{
+    background-color: red;
+}
+#close-btn
+{
+    background-color: red;
+}
+#approve-reim:hover
+{
+    background-color: white;
+}
+#deny-btn:hover
+{
+    background-color: white;
+}
+#close-btn:hover
+{
+    background-color: white;
+}
+
+#view-reim-form table
+{
+    margin: auto;
+    width: 900px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+#welcome
+{
+    font-size: 40px;
+    text-decoration: underline;
+    background-color: rgb(88, 88, 87);
+    color: rgb(241, 229, 229);
+}
+#firsttable
+{
+    margin: auto;
+    width: 1200px;
+    justify-content: space-evenly;
+}
+#new-reimbursements
+{
+    width: 250px;
+    color: gold;
+    margin-top: 0.5%;
+    margin-right: 80%;
+}
+#logout
+{
+    margin-top: -6%;
+    margin-right: -90%;
+    color:red;
+}
+#frontback
+{
+    margin: auto;
+    background-color: rgb(14, 17, 172);
+    width: 66%;
+    height: 875px;
+}
+#frontback th
+{
+    background-color: rgb(28, 173, 48);
+    font-size: 30px;
+    color: rgb(40, 10, 209);
+}
+#firsttable tr
+{
+    color: rgb(18, 51, 199);
+    font-size: 25px;
+}
+#firsttable tr:nth-child(even)
+{
+    background-color: rgb(22, 228, 73);
+}
+#firsttable tr:nth-child(odd)
+{
+    background-color: rgb(51, 238, 51);
+}
+#view-btn
+{
+    height: 30px;
+    width: 60px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 5px;
+    background-color: rgb(36, 9, 187);
+}
+#view-btn:hover
+{
+    background-color: white;
+}

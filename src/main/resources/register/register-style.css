@@ -1,0 +1,105 @@
+body
+{
+    background-image: url("../registerbackground.png");
+}
+
+#header
+{
+    font-size: 40px;
+    text-decoration: underline;
+    background-color: rgb(88, 88, 87);
+    color: rgb(241, 229, 229);
+}
+#register-form
+{
+    margin: auto;
+    margin-top: 10%;
+    width: 370px;
+    height: 460px;
+    background-color: rgb(88, 88, 87);
+    border-radius: 6px;
+}
+#headerreg
+{
+    font-size: 50px;
+    color: white;
+}
+#firstname
+{
+    margin-top: 6px;
+    width: 340px;
+    height: 35px;
+    padding-top: 10px;
+}
+#lastname
+{
+    margin-top: 6px;
+    width: 340px;
+    height: 35px;
+    padding-top: 10px;
+}
+#email
+{
+    margin-top: 6px;
+    width: 340px;
+    height: 35px;
+    padding-top: 10px;
+}
+#Registerbtn
+{
+    margin-top: 20px;
+    margin-left: 0px;
+    color: blue;
+}
+#Cancelbtn
+{
+    margin-top: 20px;
+    margin-left: 100px;
+    color:red;
+}
+#innerback
+{
+    margin-left: 12px;
+    width: 344px;
+    height: 380px;
+    background-color: gold;
+    border-radius: 6px;
+}
+#radiobtns #employee
+{
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+#radiobtns #manager
+{
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+[type=radio] +img
+{
+    cursor: pointer;
+}
+#radiobtns label
+{
+    margin-top: 30px;
+}
+#radiobtns #employee:checked +img
+{
+    content: url("../registeremployeebtnlighttrans.png");
+}
+#radiobtns #manager:checked +img
+{
+    content: url("../registermangerbtnlighttrans.png");
+}
+#register-container #employeespan
+{
+    font-size: 25px;
+    color: blue;
+}
+#register-container #managerspan
+{
+    font-size: 25px;
+    color:red;
+}

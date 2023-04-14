@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../global/style.css">
+    <link rel="stylesheet" href="./managerdashboard.css">
+</head>
+<body>
+    <div id="welcome"></div>
+
+    <div id="frontback">
+        <div style="height: 800px; overflow-y:auto;">
+            <table id="firsttable"> <!-- root tag for tables -->
+                <thead> <!-- where we add the header row -->
+                    <tr> <!-- create a new row -->
+                        <th>Reimbursment ID</th> <!-- header columns -->
+                        <th>Employee ID</th>
+                        <th>Date Filed</th>
+                        <th>Amount</th>
+                        <th>Type</th>
+                        <th id="status"></th>
+                    </tr>
+                </thead>
+                    <tbody id="reimbursement-list"> <!-- where the actaul data goes -->
+                        
+                    </tbody>
+            </table>
+        </div>
+
+
+        <button class="btn btn-primary" id="new-reimbursements">New Reimbursement</button>
+        <button class="btn btn-primary" id="logout">Logout</button>
+    </div>
+
+    <div class="opacity1" id="createback">
+        <form id="create-reim-form" class="opacity">
+                <div>
+                    <input type="number" step="0.01" min="0" id="amount" placeholder="Amount"/>
+                    <div id="radiobtns">
+                        <input type="radio" name="reim-type" id="type-food" value="FOOD">
+                        <span>Food</span>
+                        <input type="radio" name="reim-type" id="type-travel" value="TRAVEL">
+                        <span>Travel</span>
+                        <input type="radio" name="reim-type" id="type-loding" value="LODGING">
+                        <span>Lodging</span>
+                    </div>
+                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Description"></textarea>
+                </div>
+                <div id="message"></div>
+                <button class="btn btn-primary" id="create-reim">Create Reimbursement</button>
+                <button class="btn btn-primary" id="cancelbtn">Cancel</button>
+        </form>
+    </div>
+
+    <div class="opacity2" id="view-form">
+        <form id="view-reim-form">
+                <div>
+                    <table id="reimInfo"> <!-- root tag for tables -->
+                        <thead> <!-- where we add the header row -->
+                            <tr> <!-- create a new row -->
+                                <th>Reimbursment ID</th> <!-- header columns -->
+                                <th>Date Filed</th>
+                                <th>Amount</th>
+                                <th>Type</th>
+                                <th>status</th>
+                                <th>Date Resolved</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reim-info"> <!-- where the actaul data goes -->
+
+                        </tbody>
+                    </table>
+                    <table id="creatorInfo"> <!-- root tag for tables -->
+                        <thead> <!-- where we add the header row -->
+                            <tr> <!-- create a new row -->
+                                <th>Employee Id</th> <!-- header columns -->
+                                <th>Employee First Name</th>
+                                <th>Employee Last Name</th>
+                                <th>Employee Email</th>
+                            </tr>
+                        </thead>
+                        <tbody id="creator-info"> <!-- where the actaul data goes -->
+
+                        </tbody>
+                    </table>
+                    <table id="resolverInfo"> <!-- root tag for tables -->
+                        <thead> <!-- where we add the header row -->
+                            <tr> <!-- create a new row -->
+                                <th>Manager Id</th> <!-- header columns -->
+                                <th>Manager First Name</th>
+                                <th>Manager Last Name</th>
+                                <th>Manager Email</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resolver-info"> <!-- where the actaul data goes -->
+
+                        </tbody>
+                    </table>
+                    <div id="descriptionelems">
+                        <div id="reim-description-header">Description:</div>
+                        <div id="reim-description"></div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" id="approve-reim">Approve</button>
+                <button class="btn btn-primary" id="deny-btn">Deny</button>
+                <button class="btn btn-primary" id="close-btn">Close</button>
+        </form>
+    </div>
+    <script src="./dashboard.js"></script>
+    <script src="../global/global.js"></script>
+</body>
+</html>

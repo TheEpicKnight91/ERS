@@ -1,0 +1,54 @@
+body
+{
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+#message
+{
+    margin-top: 10px;
+    font-size: 20px;
+    color:red;
+}
+#username
+{
+    width: 340px;
+    height: 35px;
+    padding-top: 10px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+#password
+{
+    width: 340px;
+    height: 35px;
+    padding-top: 10px;
+}
+::placeholder
+{
+    color: white;
+}
+.btn-primary
+{
+    background-color: gray;
+    border: none;
+    width: 100px;
+    height: 45px;
+    font-size: 20px;
+    outline: none;
+}
+.btn-primary:hover
+{
+    background-color: white;
+}
+[type=text]
+{
+    background-color: gray;
+    color :white;
+}
+[type=password]
+{
+    background-color: gray;
+    color:white;
+}
